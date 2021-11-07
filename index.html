@@ -7,7 +7,7 @@
   <body>
     <script src='https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js'></script>
     <script>
-    var modelPath = 'coin-decoder-js/model.json';
+    var modelPath = 'https://github.com/oiidmnk/bwki/blob/baf3040d712d037b8d2550cf71a4e7a18f7ff0bb/coin-decoder-js/model.json';
     tf.loadLayersModel(modelPath).then(function(model) {
       // convert 10, 50 into a vector
       var y = tf.tensor2d([[10, 50]]);
